@@ -1,10 +1,9 @@
-package com.salesianostriana.dam._PrimerAequitect;
+package com.salesianostriana.dam._PrimerArquitect;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Component;
 
 import javax.annotation.PostConstruct;
-import java.util.ArrayList;
 import java.util.Arrays;
 
 @Component

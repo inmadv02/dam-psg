@@ -1,4 +1,4 @@
-package com.salesianostriana.dam._PrimerAequitect;
+package com.salesianostriana.dam._PrimerArquitect;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

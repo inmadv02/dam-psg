@@ -1,11 +1,10 @@
-package com.salesianostriana.dam._PrimerAequitect;
+package com.salesianostriana.dam._PrimerArquitect;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import javax.annotation.PostConstruct;
 import java.util.List;
 
 @RestController
