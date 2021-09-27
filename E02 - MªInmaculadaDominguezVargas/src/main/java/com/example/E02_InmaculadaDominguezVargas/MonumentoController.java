@@ -19,7 +19,7 @@ public class MonumentoController {
     }
 
     @GetMapping("/monumento/{id}")
-<<<<<<< HEAD
+
     public ResponseEntity<Monumento> findOne(@PathVariable Long id){
         return ResponseEntity.ok().body(repository.findById(id).orElse(null));
     }
