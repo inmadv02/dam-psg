@@ -1,10 +1,10 @@
-package com.example.E02_InmaculadaDominguezVargas;
+package com.salesianostriana.dam._PrimerArquitect;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class E02ApplicationTests {
+class ApplicationTests {
 
 	@Test
 	void contextLoads() {

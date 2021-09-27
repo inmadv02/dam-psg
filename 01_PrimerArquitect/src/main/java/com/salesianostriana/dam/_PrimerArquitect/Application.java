@@ -1,13 +1,13 @@
-package com.example.E02_InmaculadaDominguezVargas;
+package com.salesianostriana.dam._PrimerArquitect;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class E02Application {
+public class Application {
 
 	public static void main(String[] args) {
-		SpringApplication.run(E02Application.class, args);
+		SpringApplication.run(Application.class, args);
 	}
 
 }

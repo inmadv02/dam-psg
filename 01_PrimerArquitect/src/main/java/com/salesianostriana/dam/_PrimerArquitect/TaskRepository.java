@@ -1,4 +1,4 @@
-package com.salesianostriana.dam._PrimerAequitect;
+package com.salesianostriana.dam._PrimerArquitect;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 

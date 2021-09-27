@@ -10,9 +10,15 @@ import java.util.HashMap;
 import java.util.List;
 
 @Entity
+<<<<<<< HEAD
 @Data //Creaba los getters, los setter, etc.
 @NoArgsConstructor
 @AllArgsConstructor
+=======
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+>>>>>>> 84330997c86e0eb3ad754d5bbabcfc76490a491a
 @Table(name = "monumento")
 public class Monumento {
 
@@ -21,7 +27,11 @@ public class Monumento {
     @Column(name = "id")
     private Long id;
 
+<<<<<<< HEAD
     private String codigo_pais;
+=======
+    private int codigo_pais;
+>>>>>>> 84330997c86e0eb3ad754d5bbabcfc76490a491a
     private String nombre_pais;
     private String nombre_ciudad;
 
@@ -30,9 +40,15 @@ public class Monumento {
 
     private String nombre_monumento;
     private String descripcion;
+<<<<<<< HEAD
     private String url;
 
     public Monumento(String codigo_pais, String nombre_pais, String nombre_ciudad, String nombre_monumento) {
+=======
+    private String URL;
+
+    public Monumento(int codigo_pais, String nombre_pais, String nombre_ciudad, String nombre_monumento) {
+>>>>>>> 84330997c86e0eb3ad754d5bbabcfc76490a491a
         this.codigo_pais = codigo_pais;
         this.nombre_pais = nombre_pais;
         this.nombre_ciudad = nombre_ciudad;
