@@ -28,7 +28,7 @@ public class MonumentoController {
     public ResponseEntity<Monumento> add (@RequestBody Monumento monumento){/*Si ponemos la entidad directamente,
                                      //nos devuelven un 200 en el código, lo que quiere decir que no se crea. Como queremos un 201, usamos ResponseEntity*/
         return ResponseEntity     //RequestBody
-=======
+            
     public Monumento findById(@PathVariable("id") Long id){
         return repository.findById(id).orElse(null);
     }
@@ -36,7 +36,6 @@ public class MonumentoController {
     @PostMapping("/monumento")
     public ResponseEntity<Monumento> add (@RequestBody Monumento monumento){
         return ResponseEntity
->>>>>>> 84330997c86e0eb3ad754d5bbabcfc76490a491a
                 .status(HttpStatus.CREATED) //Le manda el código de respuesta de creado (201)
                 .body(repository.save(monumento)); //y guarda el monumento dentro del body.
     }
@@ -48,7 +47,7 @@ public class MonumentoController {
     }
 
     @PutMapping("/monumento/{id}")
-<<<<<<< HEAD
+
     public ResponseEntity<Monumento> edit (@PathVariable("id") Long id, @RequestBody Monumento monumento){
         repository.findById(id).orElse(monumento);
         return ResponseEntity
@@ -67,7 +66,7 @@ public class MonumentoController {
 
                             } ));
 
-=======
+
     public Monumento edit (@PathVariable("id") Long id, Monumento monumento){
         Monumento antiguo = repository.findById(id).orElse(monumento);
 
@@ -80,7 +79,7 @@ public class MonumentoController {
         antiguo.setURL(monumento.getURL());
 
         return repository.save(antiguo);
->>>>>>> 84330997c86e0eb3ad754d5bbabcfc76490a491a
+
     }
 
 
