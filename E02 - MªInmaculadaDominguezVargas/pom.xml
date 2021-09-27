@@ -57,7 +57,6 @@
 					</excludes>
 				</configuration>
 			</plugin>
-<<<<<<< HEAD
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
@@ -67,9 +66,6 @@
                 </configuration>
             </plugin>
         </plugins>
-=======
-		</plugins>
->>>>>>> 84330997c86e0eb3ad754d5bbabcfc76490a491a
 	</build>
 
 </project>
