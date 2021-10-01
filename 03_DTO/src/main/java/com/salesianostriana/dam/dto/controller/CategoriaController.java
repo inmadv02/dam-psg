@@ -4,6 +4,11 @@ import com.salesianostriana.dam.dto.model.Categoria;
 import com.salesianostriana.dam.dto.model.CategoriaRepository;
 import com.salesianostriana.dam.dto.model.Monumento;
 import com.salesianostriana.dam.dto.model.MonumentoRepository;
+import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.media.Content;
+import io.swagger.v3.oas.annotations.media.Schema;
+import io.swagger.v3.oas.annotations.responses.ApiResponse;
+import io.swagger.v3.oas.annotations.responses.ApiResponses;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -27,6 +32,11 @@ public class CategoriaController {
 
     }
 
+    @Operation(summary = "Obtiene una categoría en base a su ID")
+    @ApiResponses(value = {
+            @ApiResponse(responseCode = "200", description = "Se ha encontrado la categoria,",
+            content = { @Content(mediaType = "application/json", schema = @Schema(implementation = Categoria.class))})
+    })
     @GetMapping("/{id}")
     public ResponseEntity<Categoria> findOne(@PathVariable Long id) {
 
